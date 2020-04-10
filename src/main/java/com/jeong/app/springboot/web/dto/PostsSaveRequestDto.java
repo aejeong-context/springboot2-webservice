@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.swing.text.html.parser.Entity;
 
+//Entity클래와 Controller에서 쓸 Dto는 분리해서 사용하는게 중요
 @Getter
 @NoArgsConstructor
 public class PostsSaveRequestDto {
