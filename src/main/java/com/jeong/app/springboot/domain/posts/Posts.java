@@ -13,7 +13,7 @@ import javax.persistence.*;
 //테이블과 링크
 //클래스 이름 -> 테이블명
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity{
     //PK설정
     @Id
     //PK의 생성 규칙 IDENTITY는 auto_increment

@@ -4,7 +4,6 @@ import com.jeong.app.springboot.domain.posts.PostRepository;
 import com.jeong.app.springboot.domain.posts.Posts;
 import com.jeong.app.springboot.web.dto.PostsSaveRequestDto;
 import com.jeong.app.springboot.web.dto.PostsUpdateRequestDto;
-import com.sun.org.apache.bcel.internal.generic.PUSH;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
