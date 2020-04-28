@@ -16,12 +16,13 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class IndexController {
     private final PostService postsService;
-    private  final HttpSession httpSession;
+    private final HttpSession httpSession;
     @GetMapping("/")
     public String index(Model model){
         model.addAttribute("posts",postsService.findAllDesc());
         //CustomOAuth2UserService에서 로그인 성공 시 세션에 SessionUser를 저장-> 로그인 성공 시 httpSession.getAttribute("user")에서 값을 가져올 수 있음
         SessionUser user= (SessionUser) httpSession.getAttribute("user");
+
         if(user!=null){
             model.addAttribute("userName",user.getName());
         }
